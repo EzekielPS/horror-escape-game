@@ -29,6 +29,7 @@ function renderQuestion() {
             addAnswerButton("Go out the room", "path3");
 
             image.src = "images/gameStart.png"
+            image.alt = "16-bit pixel art of a dark, derelict bedroom during a thunderstorm."
 
             break;
 
@@ -40,6 +41,7 @@ function renderQuestion() {
             addAnswerButton("Climb the fence", "fenceEnding");
 
             image.src = "images/path1.png"
+            image.alt = "Action pixel art of a character leaping from a high mansion window in the rain."
             
             break;
 
@@ -52,6 +54,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/carEnding.png"
+            image.alt = "Pixel art of a vintage car exploding into a massive fireball in a dark driveway."
 
             break;
         
@@ -64,6 +67,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/fenceEnding.png"
+            image.alt = "Pixel art of a character caught in bear traps hidden in muddy grass near a tall fence."
 
             break;
 
@@ -76,6 +80,7 @@ function renderQuestion() {
             addAnswerButton("Grab the killer's feet", "retaliatePath");
 
             image.src = "images/path2.png"
+            image.alt = "First-person pixel art view from underneath a bed looking out at a pair of muddy boots."
 
             break;
 
@@ -88,6 +93,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/stillCoward.png"
+            image.alt = "Pixel art of a masked killer firing a gun into a dark room."
 
             break;
 
@@ -99,6 +105,7 @@ function renderQuestion() {
             addAnswerButton("Try and grab the killer's gun", "backfireEnding");
 
             image.src = "images/retaliatePath.png"
+            image.alt = "Action pixel art from under a bed showing hands grabbing the ankles of a standing killer."
 
             break;
 
@@ -110,6 +117,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/backfireEnding.png"
+            image.alt = "Pixel art close-up of a masked killer stabbing a struggling victim on the floor."
 
             break;
 
@@ -121,6 +129,7 @@ function renderQuestion() {
             addAnswerButton("Go downstairs", "escapistPath2");
 
             image.src = "images/escapistPath.png"
+            image.alt = "Pixel art of the player going out the bed and out the room, away from the killer."
 
             break;
 
@@ -132,6 +141,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/lockedOut.png"
+            image.alt = "Pixel art of a character desperately shaking a locked door handle while a killer's shadow looms behind them."
 
             break;
 
@@ -143,6 +153,7 @@ function renderQuestion() {
             addAnswerButton("Grab the shotgun", "shotgunEscapistEnding");
 
             image.src = "images/escapistPath2.png"
+            image.alt = ""
 
             break;
 
@@ -154,6 +165,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/snipedEnding.png"
+            image.alt = "Pixel art of a character lying dead against a door with the killer visible high above on a balcony."
 
             break;
 
@@ -166,6 +178,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/shotgunEscapist.png"
+            image.alt = "Pixel art of a survivor holding a shotgun standing in an open doorway, with the killer's body in the background."
 
             break;
         
@@ -177,6 +190,7 @@ function renderQuestion() {
             addAnswerButton("Explore the second floor", "weaponmasterPath");
 
             image.src = "images/path3.png"
+            image.alt = "High-angle pixel art looking down from a second-floor railing at the killer's long shadow on the floor below."
 
             break;
 
@@ -189,6 +203,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/bloodyStairs.png"
+            image.alt = "Pixel art of the player dead on the stairs by the killer's hands."
 
             break;
 
@@ -199,6 +214,7 @@ function renderQuestion() {
             addAnswerButton("Ignore the swords", "weaponlessEnding");
 
             image.src = "images/weaponmaster.png"
+            image.alt = "Pixel art of a weathered stone statue in a dark hallway holding a gleaming steel sword."
 
             break;
 
@@ -210,6 +226,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/weaponless.png"
+            image.alt = "Pixel art of an empty-handed character cowering in a corner as a killer approaches with a knife."
 
             break;
 
@@ -222,6 +239,7 @@ function renderQuestion() {
             addAnswerButton("Cut killer's left arm", "drawEnding");
 
             image.src = "images/weaponmaster2.png"
+            image.alt = "Action pixel art of a player charging with a sword towards a killer who is bracing with both arms exposed."
 
             break;
 
@@ -232,6 +250,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/drawEnding.png"
+            image.alt = "Pixel art of two dead bodies in a hallway; the player shot dead, and the killer dead with a severed left arm."
 
             break;
 
@@ -244,6 +263,7 @@ function renderQuestion() {
             addAnswerButton("Leave the place with the sword", "weaponmasterEnding");
 
             image.src = "images/weaponmaster3.png"
+            image.alt = "Pixel art of a victor holding a sword standing over the headless body and severed head of the killer."
             
             break;
 
@@ -255,6 +275,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/killerEnding.png"
+            image.alt = "Pixel art portrait of the main character standing in the dark wearing the killer's mask."
 
             break;
 
@@ -266,6 +287,7 @@ function renderQuestion() {
             tryAgainButton();
 
             image.src = "images/weaponmasterEnding.png"
+            image.alt = "Pixel art of a hero character walking away from the mansion gates towards a bright sunrise, carrying the sword."
 
             break;
     }
