@@ -12,6 +12,7 @@ function renderQuestion() {
     // Links the HTML elements to the JavaScript file
     const question = document.getElementById("question");
     const answers = document.getElementById("answers");
+    const image = document.getElementById("scene-img")
 
     // Clears the choices of the previous scene
     answers.innerHTML = "";
@@ -26,6 +27,8 @@ function renderQuestion() {
             addAnswerButton("Jump off the window", "path1");
             addAnswerButton("Hide under the bed", "path2");
             addAnswerButton("Go out the room", "path3");
+
+            image.src = "images/gameStart.png"
 
             break;
 
@@ -253,7 +256,7 @@ function tryAgainButton() {
     const tryAgainButtonSection = document.getElementById("try-again-button");
 
     // Makes the button display "Try Again"
-    tryAgain.textContent = "Try Again";
+    tryAgain.textContent = "Play Again";
 
     // When the Try Again button is clicked, it changes the currentState variable to the gameStart, which is the beginning
     tryAgain.onclick = () => {
