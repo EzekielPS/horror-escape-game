@@ -38,6 +38,8 @@ function renderQuestion() {
 
             addAnswerButton("Go to your car", "carEnding");
             addAnswerButton("Climb the fence", "fenceEnding");
+
+            image.src = "images/path1.png"
             
             break;
 
@@ -49,6 +51,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/carEnding.png"
+
             break;
         
         case "fenceEnding":
@@ -58,6 +62,8 @@ function renderQuestion() {
             visibility. You get your limbs clamped by the bear traps, losing your legs, and an arm. You die a slow, painful death."
 
             tryAgainButton();
+
+            image.src = "images/fenceEnding.png"
 
             break;
 
@@ -69,6 +75,8 @@ function renderQuestion() {
             addAnswerButton("Stay completely still", "stillCowardEnding");
             addAnswerButton("Grab the killer's feet", "retaliatePath");
 
+            image.src = "images/path2.png"
+
             break;
 
         case "stillCowardEnding":
@@ -79,6 +87,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/stillCoward.png"
+
             break;
 
         case "retaliatePath":
@@ -87,6 +97,8 @@ function renderQuestion() {
 
             addAnswerButton("Run out the door", "escapistPath");
             addAnswerButton("Try and grab the killer's gun", "backfireEnding");
+
+            image.src = "images/retaliatePath.png"
 
             break;
 
@@ -97,6 +109,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/backfireEnding.png"
+
             break;
 
         case "escapistPath":
@@ -105,6 +119,8 @@ function renderQuestion() {
 
             addAnswerButton("Open other rooms on the 2nd floor", "lockedOutEnding");
             addAnswerButton("Go downstairs", "escapistPath2");
+
+            image.src = "images/escapistPath.png"
 
             break;
 
@@ -115,6 +131,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/lockedOut.png"
+
             break;
 
         case "escapistPath2":
@@ -124,6 +142,8 @@ function renderQuestion() {
             addAnswerButton("Go to main door", "snipedEnding");
             addAnswerButton("Grab the shotgun", "shotgunEscapistEnding");
 
+            image.src = "images/escapistPath2.png"
+
             break;
 
         case "snipedEnding":
@@ -132,6 +152,8 @@ function renderQuestion() {
             from the 2nd floor, and you die a death with a headshot."
 
             tryAgainButton();
+
+            image.src = "images/snipedEnding.png"
 
             break;
 
@@ -143,6 +165,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/shotgunEscapist.png"
+
             break;
         
         case "path3":
@@ -151,6 +175,8 @@ function renderQuestion() {
 
             addAnswerButton("Go downstairs", "bloodyStairsEnding");
             addAnswerButton("Explore the second floor", "weaponmasterPath");
+
+            image.src = "images/path3.png"
 
             break;
 
@@ -162,6 +188,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/bloodyStairs.png"
+
             break;
 
         case "weaponmasterPath":
@@ -169,6 +197,8 @@ function renderQuestion() {
 
             addAnswerButton("Grab the swords", "weaponmasterPath2");
             addAnswerButton("Ignore the swords", "weaponlessEnding");
+
+            image.src = "images/weaponmaster.png"
 
             break;
 
@@ -178,6 +208,8 @@ function renderQuestion() {
             stabbed in the heart. You die wishing you picked up the sword instead."
 
             tryAgainButton();
+
+            image.src = "images/weaponless.png"
 
             break;
 
@@ -189,6 +221,8 @@ function renderQuestion() {
             addAnswerButton("Cut killer's right arm", "weaponmasterPath3");
             addAnswerButton("Cut killer's left arm", "drawEnding");
 
+            image.src = "images/weaponmaster2.png"
+
             break;
 
         case "drawEnding":
@@ -196,6 +230,8 @@ function renderQuestion() {
             out a gun with their right hand, and shoots you multiple times. Both of you are heavily wounded, and you die, along with the killer."
 
             tryAgainButton();
+
+            image.src = "images/drawEnding.png"
 
             break;
 
@@ -206,6 +242,8 @@ function renderQuestion() {
 
             addAnswerButton("Take the killer's mask", "killerEnding");
             addAnswerButton("Leave the place with the sword", "weaponmasterEnding");
+
+            image.src = "images/weaponmaster3.png"
             
             break;
 
@@ -216,6 +254,8 @@ function renderQuestion() {
 
             tryAgainButton();
 
+            image.src = "images/killerEnding.png"
+
             break;
 
         case "weaponmasterEnding":
@@ -224,6 +264,8 @@ function renderQuestion() {
             Harbor Butcher. You have brought peace to the town of Plalavin."
 
             tryAgainButton();
+
+            image.src = "images/weaponmasterEnding.png"
 
             break;
     }
