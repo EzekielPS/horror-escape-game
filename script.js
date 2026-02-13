@@ -153,7 +153,7 @@ function renderQuestion() {
             addAnswerButton("Grab the shotgun", "shotgunEscapistEnding");
 
             image.src = "images/escapistPath2.png"
-            image.alt = ""
+            image.alt = "Pixel art of a statue with a shotgun, and the main door behind the statue."
 
             break;
 
@@ -208,10 +208,10 @@ function renderQuestion() {
             break;
 
         case "weaponmasterPath":
-            question.textContent = "As you explore the 2nd floor, you see statues with swords. What do you do?"
+            question.textContent = "As you explore the 2nd floor, you see statues with a sword. What do you do?"
 
-            addAnswerButton("Grab the swords", "weaponmasterPath2");
-            addAnswerButton("Ignore the swords", "weaponlessEnding");
+            addAnswerButton("Grab the sword", "weaponmasterPath2");
+            addAnswerButton("Ignore the sword", "weaponlessEnding");
 
             image.src = "images/weaponmaster.png"
             image.alt = "Pixel art of a weathered stone statue in a dark hallway holding a gleaming steel sword."
