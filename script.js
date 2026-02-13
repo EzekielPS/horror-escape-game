@@ -108,6 +108,9 @@ function renderQuestion() {
             question.textContent = "You make your way downstairs, and you see the main door, and surprisingly, a shotgun displayed \
             on a statue. What do you do?"
 
+            addAnswerButton("Go to main door", "snipedEnding");
+            addAnswerButton("Grab the shotgun", "shotgunEscapistEnding");
+
             break;
 
         case "snipedEnding":
@@ -129,6 +132,9 @@ function renderQuestion() {
             question.textContent = "You get out of the room, seeing that you're on the 2nd floor, and hear that the killer is downstairs. \
             What do you do?"
 
+            addAnswerButton("Go downstairs", "bloodyStairsEnding");
+            addAnswerButton("Explore the second floor", "weaponmasterPath");
+
             break;
 
         case "bloodyStairsEnding":
@@ -141,6 +147,9 @@ function renderQuestion() {
 
         case "weaponmasterPath":
             question.textContent = "As you explore the 2nd floor, you see statues with swords. What do you do?"
+
+            addAnswerButton("Grab the swords", "weaponmasterPath2");
+            addAnswerButton("Ignore the swords", "weaponlessEnding");
 
             break;
 
@@ -156,6 +165,9 @@ function renderQuestion() {
             floor and sees you. Locking eyes with the psycho, you knew that you had no choice but to fight. You rush to the killer with \
             the intent to cut off an arm. Which arm are you going to cut?"
 
+            addAnswerButton("Cut killer's right arm", "weaponmasterPath3");
+            addAnswerButton("Cut killer's left arm", "drawEnding");
+
             break;
 
         case "drawEnding":
@@ -169,6 +181,9 @@ function renderQuestion() {
             the psycho tries to stab you with the knife in their left hand. Holding a sword, you have more range and was able to \
             react in time to block the attack. You then cut the killer's head off in one clean swing, making you the victor. What now?"
 
+            addAnswerButton("Take the killer's mask", "killerEnding");
+            addAnswerButton("Leave the place with the sword", "weaponmasterEnding");
+            
             break;
 
         case "killerEnding":
