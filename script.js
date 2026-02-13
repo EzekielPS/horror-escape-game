@@ -44,6 +44,8 @@ function renderQuestion() {
             The killer got you, and your last thought was how dumb you were, thinking it was this easy. An instant explosion \
             occurs, and you die a brutal death, with a bang."
 
+            tryAgainButton();
+
             break;
         
         case "fenceEnding":
@@ -222,6 +224,21 @@ function addAnswerButton(choiceText, nextState) {
 
     // Adds the list of choices within the answers <ul>
     answers.appendChild(choiceList)
+}
+
+function tryAgainButton() {
+    const tryAgain = document.createElement("button");
+    const tryAgainButtonSection = document.getElementById("try-again-button");
+
+    tryAgain.textContent = "Try Again";
+
+    tryAgain.onclick = () => {
+        currentState = "gameStart";
+        renderQuestion()
+        tryAgainButtonSection.innerHTML = "";
+    }
+
+    tryAgainButtonSection.appendChild(tryAgain);
 }
 
 renderQuestion()
