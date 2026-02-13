@@ -54,6 +54,8 @@ function renderQuestion() {
             traps on the ground, but they were hidden in the grass and mud, with the rain of the storm blocking more \
             visibility. You get your limbs clamped by the bear traps, losing your legs, and an arm. You die a slow, painful death."
 
+            tryAgainButton();
+
             break;
 
         case "path2":
@@ -72,6 +74,8 @@ function renderQuestion() {
             you bleed out. Turns out, the killer knew that you were there all along, because of course you would be. You \
             die a coward's death in the killer's eyes."
 
+            tryAgainButton();
+
             break;
 
         case "retaliatePath":
@@ -87,6 +91,8 @@ function renderQuestion() {
             question.textContent = "While the killer is down, you try to take the gun for yourself. As you try to pull the \
             gun from his right hand, you suddenly get stabbed on your right torso, and you see the killer holding a knife \
             on his left hand. The killer continues stabbing you until you fall. You die a painful death, with 28 stab wounds!"
+
+            tryAgainButton();
 
             break;
 
@@ -104,6 +110,8 @@ function renderQuestion() {
             open a door, the killer creeps up behind you, and stabs you with a knife. The killer then stabs your eyes with a key, \
             causing you to die a painful death, all because of locked doors."
 
+            tryAgainButton();
+
             break;
 
         case "escapistPath2":
@@ -120,6 +128,8 @@ function renderQuestion() {
             struggle to open it, and with a clear sight of you, the killer shoots your head from the second floor. You get sniped \
             from the 2nd floor, and you die a death with a headshot."
 
+            tryAgainButton();
+
             break;
 
         case "shotgunEscapistEnding":
@@ -127,6 +137,8 @@ function renderQuestion() {
             and as you hear footsteps on the step that you are under, you shoot through the stairs. You hear the killer fall down \
             the staircase, and you shoot the killer again to make sure the job is finished. You did it, you killed the killer. You \
             grab the keys from the dead body and finally escape this place. You have escaped the killer's grasp."
+
+            tryAgainButton();
 
             break;
         
@@ -145,6 +157,8 @@ function renderQuestion() {
             killer to grab your leg. The maniac brings out a knife and cuts your achilles tendons, rendering you unable to walk. The \
             killer then stabs you in the back and spine, paralyzing you. In the end, you die a painful, paralyzing death."
 
+            tryAgainButton();
+
             break;
 
         case "weaponmasterPath":
@@ -159,6 +173,8 @@ function renderQuestion() {
             question.textContent = "You ignore the swords and keep exploring. But then, the killer goes up to the 2nd floor and sees you. \
             Being weaponless, you panic. As the killer tries to stab you, you have nothing to fight back with, and you end up getting \
             stabbed in the heart. You die wishing you picked up the sword instead."
+
+            tryAgainButton();
 
             break;
 
@@ -175,6 +191,8 @@ function renderQuestion() {
         case "drawEnding":
             question.textContent = "You swing your sword to cut the killer's left arm, and you succeed. But then, the killer pulls \
             out a gun with their right hand, and shoots you multiple times. Both of you are heavily wounded, and you die, along with the killer."
+
+            tryAgainButton();
 
             break;
 
@@ -193,12 +211,16 @@ function renderQuestion() {
             and you thirst to kill. You take on the mantle of the killer, with the sword being your main weapon. You now kidnap \
             other people just to feel satisfaction. You have become what you once feared. You are now the killer."
 
+            tryAgainButton();
+
             break;
 
         case "weaponmasterEnding":
             question.textContent = "After killing the killer, you choose to finally leave this place, taking the sword that \
             helped you win. You have escaped. You have lived to tell the tale of how you became the person who killed the Gray \
             Harbor Butcher. You have brought peace to the town of Plalavin."
+
+            tryAgainButton();
 
             break;
     }
@@ -230,15 +252,18 @@ function tryAgainButton() {
     const tryAgain = document.createElement("button");
     const tryAgainButtonSection = document.getElementById("try-again-button");
 
+    // Makes the button display "Try Again"
     tryAgain.textContent = "Try Again";
 
+    // When the Try Again button is clicked, it changes the currentState variable to the gameStart, which is the beginning
     tryAgain.onclick = () => {
         currentState = "gameStart";
         renderQuestion()
         tryAgainButtonSection.innerHTML = "";
     }
 
+    // Displays the button in the div I created in HTML
     tryAgainButtonSection.appendChild(tryAgain);
 }
 
-renderQuestion()
+renderQuestion();
