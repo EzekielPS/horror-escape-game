@@ -18,15 +18,23 @@ function renderQuestion() {
 
     switch (currentState) {
 
+        // Game Scenes
         case "gameStart":
             question.textContent = "You wake up in a dirty room, alone and cold, in an abandoned house. You hear \
             thunder clap as the storm rages, along with distant, hostile, footsteps echoing in the halls. What do you do?";
+
+            addAnswerButton("Jump off the window", "path1");
+            addAnswerButton("Hide under the bed", "path2");
+            addAnswerButton("Go out the room", "path3");
 
             break;
 
         case "path1":
             question.textContent = "You jump off the window, sticking the landing from the third floor, but at the \
             cost of having your right leg injured. What next?";
+
+            addAnswerButton("Go to your car", "carEnding");
+            addAnswerButton("Climb the fence", "fenceEnding");
             
             break;
 
@@ -51,6 +59,9 @@ function renderQuestion() {
             minutes of your life, the footsteps make their way to the room you're in. The door opens, and the killer \
             walks around the room, searching for you. What do you do?"
 
+            addAnswerButton("Stay completely still", "stillCowardEnding");
+            addAnswerButton("Grab the killer's feet", "retaliatePath");
+
             break;
 
         case "stillCowardEnding":
@@ -65,6 +76,9 @@ function renderQuestion() {
             question.textContent = "You choose to grab the killer's feet, and you catch the killer off guard, causing the \
             person to fall and momentarily stunned. 'This is my chance!' you think to yourself. What do you do?"
 
+            addAnswerButton("Run out the door", "escapistPath");
+            addAnswerButton("Try and grab the killer's gun", "backfireEnding");
+
             break;
 
         case "backfireEnding":
@@ -77,6 +91,9 @@ function renderQuestion() {
         case "escapistPath":
             question.textContent = "While the killer is down, you try and run to look for a way out. You are on the second floor. \
             What do you do?"
+
+            addAnswerButton("Open other rooms on the 2nd floor", "lockedOutEnding");
+            addAnswerButton("Go downstairs", "escapistPath2");
 
             break;
 
@@ -169,3 +186,27 @@ function renderQuestion() {
             break;
     }
 }
+
+function addAnswerButton(choiceText, nextState) {
+    const answers = document.getElementById("answers");
+    const choiceList = document.createElement("li");
+    const choiceButton = document.createElement("button");
+
+    // Displays the text of the choice within the button
+    choiceButton.textContent = choiceText;
+
+    // When a choice or button is clicked, the currentState gets updated to the corresponding next scene, 
+    // and the function is ran again to render the scene
+    choiceButton.onclick = () => {
+        currentState = nextState;
+        renderQuestion();
+    }
+
+    // Puts the buttons within the list <li> created
+    choiceList.appendChild(choiceButton);
+
+    // Adds the list of choices within the answers <ul>
+    answers.appendChild(choiceList)
+}
+
+renderQuestion()
